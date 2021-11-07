@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/favicon.ico" rel="shortcut icon" />
+
+    <title>momentum</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="player">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <ul class="play-list"></ul>
+      </div>
+      <div class="player-extended">
+        <div class="player-extended-controls">
+          <h4 class="audio-title"></h4>
+          <div class="audio-controls">
+            <button class="play-prev player-extended-icon"></button>
+            <button class="play player-extended-icon"></button>
+            <button class="play-next player-extended-icon"></button>
+          </div>
+          <input
+            class="audio-progress bar"
+            value="0"
+            type="range"
+            min="0"
+            max="100"
+          />
+          <div class="audio-duration">
+            <span class="audio-current-time audio-time">00:00/</span>
+            <span class="audio-total-time audio-time">00:00</span>
+          </div>
+
+          <div class="sound-control">
+            <button class="audio-sound player-extended-icon"></button>
+            <input
+              class="audio-volume bar"
+              value="50"
+              type="range"
+              min="0"
+              max="100"
+            />
+          </div>
+        </div>
+
+        <ul class="play-list-extended"></ul>
+      </div>
+
+      <div class="weather">
+        <input type="text" class="city" />
+        <i class="weather-icon owf"></i>
+        <div class="weather-error"></div>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="slider-icons">
+        <button class="slide-prev slider-icon"></button>
+        <button class="slide-next slider-icon"></button>
+      </div>
+      <time class="time"></time>
+      <date class="date"></date>
+      <div class="greeting-container">
+        <span class="greeting"></span>
+        <input type="text" class="name" />
+      </div>
+    </main>
+    <footer class="footer">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+      <div class="settings-menu">
+        <h4 class="settings-menu-title">Settings</h4>
+        <div class="general-settings">
+          <h4 class="settings-menu-subtitle">General</h4>
+          <div class="language-setting setting">
+            <p class="setting-name">Language</p>
+            <div class="select">
+              <select class="language">
+                <option value="EN" selected>English</option>
+                <option value="RU">Русский</option>
+              </select>
+            </div>
+          </div>
+          <div class="image-source-setting setting">
+            <p class="setting-name">Image source</p>
+            <div class="select">
+              <select class="image-source">
+                <option value="Github" selected>Github</option>
+                <option value="Unsplash API">Unsplash API</option>
+                <option value="Flickr API">Flickr API</option>
+              </select>
+            </div>
+            <div class="tag">
+              <p class="setting-name">Image tag</p>
+              <input class="image-tag" type="text" />
+            </div>
+          </div>
+          <div class="player-view-setting setting">
+            <p class="setting-name">Extended player</p>
+            <label class="switch">
+              <input id="switch-player" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="appearence-settings">
+          <h4 class="settings-menu-subtitle widgets-subtitle">Widgets</h4>
+          <div class="greeting-setting setting">
+            <p class="setting-name">Greeting</p>
+            <label class="switch">
+              <input id="greeting" type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="time-setting setting">
+            <p class="setting-name">Time</p>
+            <label class="switch">
+              <input id="time" type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="date-setting setting">
+            <p class="setting-name">Date</p>
+            <label class="switch">
+              <input id="date" type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="quotes-setting setting">
+            <p class="setting-name">Quotes</p>
+            <label class="switch">
+              <input id="quote" type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="weather-setting setting">
+            <p class="setting-name">Weather</p>
+            <label class="switch">
+              <input id="weather" type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="player-setting setting">
+            <p class="setting-name">Audio player</p>
+            <label class="switch">
+              <input id="player" type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <button class="settings settings-icon"></button>
+    </footer>
+  </body>
+</html>
