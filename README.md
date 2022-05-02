@@ -10,4 +10,4 @@ Run `npm start` for a dev server. Navigate to `http://localhost:3000/`. The app 
 
 Run `npm dev` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `npm build` for a production build.
 
-[View deploy](https://rolling-scopes-school.github.io/arkhipovanatoly-JSFE2021Q3/momentum)
+[View deploy](https://momentum-project-aa.netlify.app/)
