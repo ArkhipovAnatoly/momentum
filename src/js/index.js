@@ -14,7 +14,3 @@ audioPlayer();
 audioPlayerExtended();
 slider();
 appSettings();
-
-console.info(
-  'Hello my dear friend! В данной работе не реализован только доп.функционал '
-);
